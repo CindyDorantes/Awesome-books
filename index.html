@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <h3>Awesome Books</h3>
+            <nav class="nav-list">
+                <ul class="nav-ul">
+                    <li id="list">List</li>
+                    <li id="add">Add new</li>
+                    <li id="contact">Contact</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="date"></div>
+
+    </header>
+    <main>
+        <section class="section-table active">
+            <h1 class="title">Awesome Books</h1>
+            <table id="table" class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- elements created with JS -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section-add">
+            <h2>Add a new book</h2>
+            <form class="form" action="#">
+                <input id="book" type="text" placeholder="title" class="book-title" required>
+                <input id="author" type="text" placeholder="author" class="author-title" required>
+                <button id="button" type="button" class="add">Add</button>
+            </form>
+        </section>
+
+        <section class="section-contact">
+            <h2 class="contact">Contact information</h2>
+            <p>Do you have any questions or you just want to say hello?
+                <br>You can reach out to us!
+            </p><br>
+            <div class="personal-contact">
+                <ul class="info">
+                    <li>Our e-mail: cindym.dorantes@gmail.com, jdbs9514@gmail.com</li>
+                    <li>Our phone number: +522224395974, +51939528269</li>
+                    <li>Our address: 742 Evergreen Terrace. Springfield U.S.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright</p>
+    </footer>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
