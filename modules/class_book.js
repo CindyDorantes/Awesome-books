@@ -1,9 +1,7 @@
-export {Book};
-
 const table = document.getElementById('tbody');
 let btnRemove;
 
-class Book {
+export default class {
   constructor(title, author) {
     this.title = title;
     this.author = author;
@@ -33,5 +31,4 @@ class Book {
       localStorage.setItem('baseData', JSON.stringify(dataBase));
     });
   }
-
 }

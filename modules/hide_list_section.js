@@ -1,7 +1,5 @@
-export {HideListSection};
-
 // review if section-table has the class 'active' //
-function HideListSection(list) {
+export default function (list) {
   let includeActive;
   for (let i = 0; i < list.classList.length; i += 1) {
     if (list.classList[i] === 'active') {

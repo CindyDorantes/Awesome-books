@@ -1,6 +1,4 @@
-export { ActiveAdd };
-
-function ActiveAdd(addNew) {
+export default function (addNew) {
   let includeActive;
   for (let i = 0; i < addNew.classList.length; i += 1) {
     if (addNew.classList[i] === 'active') {

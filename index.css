@@ -1,129 +1,128 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid black;
-    padding: 1%;
-    margin: 1% 2% 1% 2%;
-  }
-  
-  .nav-ul {
-    display: flex;
-    text-decoration: none;
-    list-style-type: none;
-  }
-  
-  .nav-ul li {
-    padding: 5px 30px;
-    border-right: 1.5px solid black;
-    cursor: pointer;
-  }
-  
-  .nav-ul li:hover {
-    color: rgb(19, 19, 185);
-  }
-  
-  #date {
-    text-align: end;
-    padding: 1% 2%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-  h1 {
-    text-align: center;
-    padding: 40px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin: 10px;
-    margin-top: 30px;
-  }
-  
-  .section-table,
-  .section-add {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-  }
-  
-  .section-table.active {
-    display: flex;
-  }
-  
-  .section-add.active {
-    display: flex;
-  }
-  
-  .section-contact.active {
-    display: block;
-  }
-  
-  .table {
-    border: 2px solid black;
-    text-align: justify;
-    width: 60%;
-    max-width: 600px;
-    padding-bottom: 5px;
-    border-radius: 8px;
-  }
-  
-  .table td {
-    padding: 5px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    padding: 10px;
-  }
-  
-  .book-title,
-  .author-title {
-    width: 100%;
-    padding: 5px;
-    margin: 5px;
-    border: 1.5px solid black;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 3px;
-    box-shadow: 3px 6px #888;
-  }
-  
-  .add {
-    width: 50px;
-    align-self: flex-end;
-    margin-top: 5px;
-  }
-  
-  .section-contact {
-    text-align: center;
-    display: none;
-  }
-  
-  .info {
-    text-align: center;
-  }
-  
-  .copyright {
-    border: 2px solid #000;
-    padding: 1%;
-    margin: 2% 4% 2% 4%;
-  }
-  
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 1%;
+  margin: 1% 2% 1% 2%;
+}
+
+.nav-ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-ul li {
+  padding: 5px 30px;
+  border-right: 1.5px solid black;
+  cursor: pointer;
+}
+
+.nav-ul li:hover {
+  color: rgb(19, 19, 185);
+}
+
+#date {
+  text-align: end;
+  padding: 1% 2%;
+}
+
+h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.section-table,
+.section-add {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.section-table.active {
+  display: flex;
+}
+
+.section-add.active {
+  display: flex;
+}
+
+.section-contact.active {
+  display: block;
+}
+
+.table {
+  border: 2px solid black;
+  text-align: justify;
+  width: 60%;
+  max-width: 600px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+}
+
+.table td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 10px;
+}
+
+.book-title,
+.author-title {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  border: 1.5px solid black;
+  border-radius: 4px;
+}
+
+button {
+  padding: 3px;
+  box-shadow: 3px 6px #888;
+}
+
+.add {
+  width: 50px;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+
+.section-contact {
+  text-align: center;
+  display: none;
+}
+
+.info {
+  text-align: center;
+}
+
+.copyright {
+  border: 2px solid #000;
+  padding: 1%;
+  margin: 2% 4% 2% 4%;
+}

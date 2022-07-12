@@ -1,11 +1,11 @@
-import { Book } from './modules/class_book.js';
-import { HideListSection } from './modules/hide_list_section.js';
-import { HideAddSection } from './modules/hide_add_section.js';
-import { HideContactSection } from './modules/hide_contact_section.js';
-import { ActiveList } from './modules/active_list_section.js';
-import { ActiveAdd } from './modules/active_add_section.js';
-import { ActiveContact } from './modules/active_contact_section.js';
-import { DateTime } from "./modules/luxon.js";
+import Book from './modules/class_book.js';
+import HideListSection from './modules/hide_list_section.js';
+import HideAddSection from './modules/hide_add_section.js';
+import HideContactSection from './modules/hide_contact_section.js';
+import ActiveList from './modules/active_list_section.js';
+import ActiveAdd from './modules/active_add_section.js';
+import ActiveContact from './modules/active_contact_section.js';
+import { DateTime } from './modules/luxon.js';
 
 const btnAdd = document.getElementById('button');
 const displayDate = document.getElementById('date');
@@ -17,7 +17,7 @@ displayDate.innerHTML = now.toLocaleString(DateTime.DATETIME_FULL);
 btnAdd.addEventListener('click', () => {
   const nameTitle = document.getElementById('book').value;
   const nameAuthor = document.getElementById('author').value;
-  let newBook = new Book(nameTitle, nameAuthor);
+  const newBook = new Book(nameTitle, nameAuthor);
   newBook.addBook(dataBase);
   newBook.displayBook(dataBase);
 
@@ -27,7 +27,7 @@ btnAdd.addEventListener('click', () => {
 if (localStorage.getItem('baseData')) {
   dataBase = JSON.parse(localStorage.getItem('baseData'));
   for (let i = 0; i < dataBase.length; i += 1) {
-    let newBook = new Book(dataBase[i].title, dataBase[i].author);
+    const newBook = new Book(dataBase[i].title, dataBase[i].author);
     newBook.displayBook(dataBase);
   }
 }
@@ -41,7 +41,6 @@ const contact = document.querySelector('.section-contact');
 const listLink = document.getElementById('list');
 const addLink = document.getElementById('add');
 const contactLink = document.getElementById('contact');
-
 
 // Add click event for list link - Make section-table appears //
 listLink.addEventListener('click', () => {

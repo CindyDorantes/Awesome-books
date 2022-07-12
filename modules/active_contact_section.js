@@ -1,6 +1,4 @@
-export {ActiveContact};
-
-function ActiveContact(contact) {
+export default function (contact) {
   let includeActive;
   for (let i = 0; i < contact.classList.length; i += 1) {
     if (contact.classList[i] === 'active') {
